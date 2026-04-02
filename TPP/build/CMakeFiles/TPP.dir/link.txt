@@ -1,0 +1,1 @@
+/usr/bin/c++ -g CMakeFiles/TPP.dir/src/main.cpp.o CMakeFiles/TPP.dir/src/glad.c.o -o TPP  -lglfw 

@@ -1,0 +1,3 @@
+/home/sea-man/Desktop/Computer_Graphics/circle_sphere/build/CMakeFiles/circle_sphere.dir
+/home/sea-man/Desktop/Computer_Graphics/circle_sphere/build/CMakeFiles/edit_cache.dir
+/home/sea-man/Desktop/Computer_Graphics/circle_sphere/build/CMakeFiles/rebuild_cache.dir

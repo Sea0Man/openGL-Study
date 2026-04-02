@@ -1,0 +1,6 @@
+
+{
+  "title":"Lecture Notes",
+  "content":" LEC # TOPICS 00 Introduction and Course Overview (PDF - 2.5MB) 01 Bezier Curves and Splines (PDF) 02 Curves Properties and Conversion, Surface Representation (PDF - 1.7MB) 03 Coordinates and Transformations (PDF - 1.5MB) 04 Hierarchical Modeling (PDF - 2.1MB) 05 Color (PDF - 3.5MB) 06 Basics of Computer Animation—Skinning/Enveloping (PDF - 2.4MB) 07 Particle Systems and ODEs (PDF - 1.8MB) 08 Particle Systems and ODE Solvers II, Mass Spring Modeling (PDF - 1.4MB) 09 Implicit Integration, Collision Detection (PDF - 1.7MB) 10 Collision Detection and Response (PDF - 1.2MB) 11 Ray Casting and Rendering (PDF - 3.2MB) 12 Ray Casting II (PDF - 2.0MB) 13 Ray Tracing (PDF - 2.9MB) 14 Acceleration Structures for Ray Casting (PDF) 15 Shading and Material Appearance (PDF - 1.8MB) 16 Texture Mapping and Shaders (PDF - 2.2MB) 17 Sampling, Aliasing, and Mipmaps (PDF - 1.6MB) 18 Global Illumination and Monte Carlo (PDF - 2.7MB) 19 Image-Based Rendering and Lighting (Lecture notes not available) 20 Output Devices (Lecture notes not available) 21 Graphics Pipeline and Rasterization (PDF - 2.4MB) 22 Graphics Pipeline and Rasterization II (PDF - 2.2MB) 23 Real-time Shadows (PDF - 2.8MB) 24 Graphics Hardware and Computer Games (Lecture notes not available) "}
+
+

@@ -1,0 +1,14 @@
+[
+{
+  "directory": "/home/sea-man/Desktop/Computer_Graphics/project/build",
+  "command": "/usr/bin/c++  -isystem /home/sea-man/Desktop/Computer_Graphics/project/include -g -o CMakeFiles/project.dir/src/main.cpp.o -c /home/sea-man/Desktop/Computer_Graphics/project/src/main.cpp",
+  "file": "/home/sea-man/Desktop/Computer_Graphics/project/src/main.cpp",
+  "output": "CMakeFiles/project.dir/src/main.cpp.o"
+},
+{
+  "directory": "/home/sea-man/Desktop/Computer_Graphics/project/build",
+  "command": "/usr/bin/cc  -isystem /home/sea-man/Desktop/Computer_Graphics/project/include -g -o CMakeFiles/project.dir/src/glad.c.o -c /home/sea-man/Desktop/Computer_Graphics/project/src/glad.c",
+  "file": "/home/sea-man/Desktop/Computer_Graphics/project/src/glad.c",
+  "output": "CMakeFiles/project.dir/src/glad.c.o"
+}
+]

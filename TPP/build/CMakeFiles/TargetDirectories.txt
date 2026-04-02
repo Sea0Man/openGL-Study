@@ -1,0 +1,3 @@
+/home/sea-man/Desktop/Computer_Graphics/TPP/build/CMakeFiles/TPP.dir
+/home/sea-man/Desktop/Computer_Graphics/TPP/build/CMakeFiles/edit_cache.dir
+/home/sea-man/Desktop/Computer_Graphics/TPP/build/CMakeFiles/rebuild_cache.dir

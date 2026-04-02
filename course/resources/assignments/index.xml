@@ -1,0 +1,235 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Assignments on MIT OpenCourseWare</title>
+    <link>/resources/assignments/</link>
+    <description>Recent content in Assignments on MIT OpenCourseWare</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <atom:link href="/resources/assignments/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>a_2.zip</title>
+      <link>/resources/a_2/data.json</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>/resources/a_2/data.json</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>a2.exe</title>
+      <link>/resources/a2-1/data.json</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>/resources/a2-1/data.json</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>a2.zip</title>
+      <link>/resources/a2/data.json</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>/resources/a2/data.json</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>a3.tgz</title>
+      <link>/resources/a3/data.json</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>/resources/a3/data.json</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>a3.zip</title>
+      <link>/resources/a3-1/data.json</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>/resources/a3-1/data.json</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>a3soln.exe</title>
+      <link>/resources/a3soln/data.json</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>/resources/a3soln/data.json</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>a3soln.zip</title>
+      <link>/resources/a3soln-1/data.json</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>/resources/a3soln-1/data.json</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>a4_soln.zip</title>
+      <link>/resources/a4_soln/data.json</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>/resources/a4_soln/data.json</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>a4soln.exe</title>
+      <link>/resources/a4soln/data.json</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>/resources/a4soln/data.json</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>a5_soln.zip</title>
+      <link>/resources/a5_soln/data.json</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>/resources/a5_soln/data.json</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>a5.zip</title>
+      <link>/resources/a5/data.json</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>/resources/a5/data.json</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>a5soln.exe</title>
+      <link>/resources/a5soln/data.json</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>/resources/a5soln/data.json</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>a5soln.zip</title>
+      <link>/resources/a5soln-1/data.json</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>/resources/a5soln-1/data.json</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Assignments</title>
+      <link>/pages/assignments/data.json</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>/pages/assignments/data.json</guid>
+      <description>&lt;p&gt;This course makes use of Athena, MIT&amp;rsquo;s UNIX-based computing environment. OCW does not provide access to this environment.&lt;/p&gt;&#xA;&lt;p&gt;In each assignment&amp;rsquo;s handout, there is a section called &amp;ldquo;Getting Started&amp;rdquo; that explains how to use the executable files. Later sections in each assignment handout tell which files should be modified to complete the assignment.&lt;/p&gt;&#xA;&lt;p&gt;&lt;table&gt;&#xA;&#xA;&lt;thead&gt;&#xA;&#xA;&lt;tr&gt;&#xA;&#xA;&lt;th&gt;&#xA;&#xA;ASSIGNMENT #&#xA;&lt;/th&gt;&#xA;&#xA;&lt;th&gt;&#xA;&#xA;TOPICS&#xA;&lt;/th&gt;&#xA;&#xA;&lt;th&gt;&#xA;&#xA;SUPPORTING FILES&#xA;&lt;/th&gt;&#xA;&lt;/p&gt;&#xA;&lt;/tr&gt;&#xA;&#xA;&lt;p&gt;&lt;/thead&gt;&#xA;&#xA;&lt;tr&gt;&#xA;&#xA;&lt;td&gt;&#xA;&#xA;0&#xA;&lt;/td&gt;&#xA;&#xA;&lt;td&gt;&#xA;&#xA;OpenGL Mesh Viewer&#xA;&lt;/td&gt;&#xA;&#xA;&lt;td&gt;&#xA;&lt;/p&gt;&#xA;&lt;ol&gt;&#xA;&lt;li&gt;&lt;a href=&#34;../../resources/mit6_837f12_assn0/index.html&#34;&gt;Handout (PDF)&lt;/a&gt;&lt;/li&gt;&#xA;&lt;li&gt;&lt;a href=&#34;../../resources/zero-tar/index.html&#34;&gt;Starter code (GZ)&lt;/a&gt;&lt;/li&gt;&#xA;&lt;li&gt;&lt;a href=&#34;../../resources/zero/index.html&#34;&gt;Starter code for VC++ 2010 (ZIP)&lt;/a&gt; (This ZIP file contains: 1 .cpp file, 3 .obj files, 1 .dll file, 3 .vcxproj files and 3 file folders.)&lt;/li&gt;&#xA;&lt;/ol&gt;&#xA;&lt;/td&gt;&#xA;&#xA;&lt;p&gt;&lt;/tr&gt;&#xA;&#xA;&lt;tr&gt;&#xA;&#xA;&lt;td&gt;&#xA;&#xA;1&#xA;&lt;/td&gt;&#xA;&#xA;&lt;td&gt;&#xA;&#xA;Curves and Surfaces&#xA;&lt;/td&gt;&#xA;&#xA;&lt;td&gt;&#xA;&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Curves &amp; surfaces</title>
+      <link>/resources/mit6_837f12_assn1/data.json</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>/resources/mit6_837f12_assn1/data.json</guid>
+      <description>&lt;p&gt;This resource contains information regarding assignment 1.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>distrib_3.tar.gz</title>
+      <link>/resources/distrib_3-tar/data.json</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>/resources/distrib_3-tar/data.json</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>distrib.zip</title>
+      <link>/resources/distrib/data.json</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>/resources/distrib/data.json</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>distrib1.tar.gz</title>
+      <link>/resources/distrib1-tar/data.json</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>/resources/distrib1-tar/data.json</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>distrib2.zip</title>
+      <link>/resources/distrib2/data.json</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>/resources/distrib2/data.json</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Hierarchical modeling, skinning</title>
+      <link>/resources/mit6_837f12_assn2/data.json</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>/resources/mit6_837f12_assn2/data.json</guid>
+      <description>&lt;p&gt;This resource contains information regarding assignment 2.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>libRK4.a</title>
+      <link>/resources/librk4/data.json</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>/resources/librk4/data.json</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>one_mac.zip</title>
+      <link>/resources/one_mac/data.json</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>/resources/one_mac/data.json</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>one_vs.zip</title>
+      <link>/resources/one_vs/data.json</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>/resources/one_vs/data.json</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>one.zip</title>
+      <link>/resources/one/data.json</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>/resources/one/data.json</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Physically-based simulation</title>
+      <link>/resources/mit6_837f12_assn3/data.json</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>/resources/mit6_837f12_assn3/data.json</guid>
+      <description>&lt;p&gt;This resource contains information regarding assignment 3.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Ray casting</title>
+      <link>/resources/mit6_837f12_assn4/data.json</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>/resources/mit6_837f12_assn4/data.json</guid>
+      <description>&lt;p&gt;This resource contains information regarding assignment 4.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Ray tracing</title>
+      <link>/resources/mit6_837f12_assn5/data.json</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>/resources/mit6_837f12_assn5/data.json</guid>
+      <description>&lt;p&gt;This resource contains information regarding assignment 5.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>sibenik_1.tar.gz</title>
+      <link>/resources/sibenik_1-tar/data.json</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>/resources/sibenik_1-tar/data.json</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>sponza.tar.gz</title>
+      <link>/resources/sponza-tar/data.json</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>/resources/sponza-tar/data.json</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Warm up (mesh display with OpenGL)</title>
+      <link>/resources/mit6_837f12_assn0/data.json</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>/resources/mit6_837f12_assn0/data.json</guid>
+      <description>&lt;p&gt;This resource contains information regarding assignment 0.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>zero.tar.gz</title>
+      <link>/resources/zero-tar/data.json</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>/resources/zero-tar/data.json</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>zero.zip</title>
+      <link>/resources/zero/data.json</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>/resources/zero/data.json</guid>
+      <description></description>
+    </item>
+  </channel>
+</rss>

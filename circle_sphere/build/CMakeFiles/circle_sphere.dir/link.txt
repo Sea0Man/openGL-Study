@@ -1,0 +1,1 @@
+/usr/bin/c++ -g CMakeFiles/circle_sphere.dir/src/main.cpp.o CMakeFiles/circle_sphere.dir/src/glad.c.o -o circle_sphere  -lglfw 

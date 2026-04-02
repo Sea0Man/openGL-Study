@@ -1,0 +1,14 @@
+[
+{
+  "directory": "/home/sea-man/Desktop/Computer_Graphics/TPP/build",
+  "command": "/usr/bin/c++  -isystem /home/sea-man/Desktop/Computer_Graphics/TPP/include -g -o CMakeFiles/TPP.dir/src/main.cpp.o -c /home/sea-man/Desktop/Computer_Graphics/TPP/src/main.cpp",
+  "file": "/home/sea-man/Desktop/Computer_Graphics/TPP/src/main.cpp",
+  "output": "CMakeFiles/TPP.dir/src/main.cpp.o"
+},
+{
+  "directory": "/home/sea-man/Desktop/Computer_Graphics/TPP/build",
+  "command": "/usr/bin/cc  -isystem /home/sea-man/Desktop/Computer_Graphics/TPP/include -g -o CMakeFiles/TPP.dir/src/glad.c.o -c /home/sea-man/Desktop/Computer_Graphics/TPP/src/glad.c",
+  "file": "/home/sea-man/Desktop/Computer_Graphics/TPP/src/glad.c",
+  "output": "CMakeFiles/TPP.dir/src/glad.c.o"
+}
+]
