@@ -1,5 +1,5 @@
 CMakeFiles/circle_sphere.dir/src/glad.c.o: \
- /home/sea-man/Desktop/Computer_Graphics/circle_sphere/src/glad.c \
+ /home/lex/Desktop/openGL-Study/circle_sphere/src/glad.c \
  /usr/include/stdc-predef.h /usr/include/stdio.h \
  /usr/include/x86_64-linux-gnu/bits/libc-header-start.h \
  /usr/include/features.h /usr/include/features-time64.h \
@@ -52,8 +52,8 @@ CMakeFiles/circle_sphere.dir/src/glad.c.o: \
  /usr/include/x86_64-linux-gnu/bits/types/locale_t.h \
  /usr/include/x86_64-linux-gnu/bits/types/__locale_t.h \
  /usr/include/strings.h \
- /home/sea-man/Desktop/Computer_Graphics/circle_sphere/include/glad/glad.h \
- /home/sea-man/Desktop/Computer_Graphics/circle_sphere/include/KHR/khrplatform.h \
+ /home/lex/Desktop/openGL-Study/circle_sphere/include/glad/glad.h \
+ /home/lex/Desktop/openGL-Study/circle_sphere/include/KHR/khrplatform.h \
  /usr/lib/gcc/x86_64-linux-gnu/13/include/stdint.h /usr/include/stdint.h \
  /usr/include/x86_64-linux-gnu/bits/wchar.h \
  /usr/include/x86_64-linux-gnu/bits/stdint-uintn.h \

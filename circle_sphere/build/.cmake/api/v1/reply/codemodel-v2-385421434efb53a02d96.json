@@ -2,11 +2,12 @@
 	"configurations" : 
 	[
 		{
+			"abstractTargets" : [],
 			"directories" : 
 			[
 				{
 					"build" : ".",
-					"jsonFile" : "directory-.-Debug-f5ebdc15457944623624.json",
+					"jsonFile" : "directory-.-Debug-fd6451d79dc282e2f566.json",
 					"minimumCMakeVersion" : 
 					{
 						"string" : "3.10.0"
@@ -39,7 +40,7 @@
 				{
 					"directoryIndex" : 0,
 					"id" : "circle_sphere::@6890427a1f51a3e7e1df",
-					"jsonFile" : "target-circle_sphere-Debug-4e74a72ee93532def061.json",
+					"jsonFile" : "target-circle_sphere-Debug-f286089b015db113b469.json",
 					"name" : "circle_sphere",
 					"projectIndex" : 0
 				}
@@ -49,12 +50,12 @@
 	"kind" : "codemodel",
 	"paths" : 
 	{
-		"build" : "/home/sea-man/Desktop/Computer_Graphics/circle_sphere/build",
-		"source" : "/home/sea-man/Desktop/Computer_Graphics/circle_sphere"
+		"build" : "/home/lex/Desktop/openGL-Study/circle_sphere/build",
+		"source" : "/home/lex/Desktop/openGL-Study/circle_sphere"
 	},
 	"version" : 
 	{
 		"major" : 2,
-		"minor" : 6
+		"minor" : 10
 	}
 }

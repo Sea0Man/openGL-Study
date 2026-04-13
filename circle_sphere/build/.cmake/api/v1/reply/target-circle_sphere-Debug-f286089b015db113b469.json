@@ -43,6 +43,11 @@
 			}
 		]
 	},
+	"codemodelVersion" : 
+	{
+		"major" : 2,
+		"minor" : 10
+	},
 	"compileGroups" : 
 	[
 		{
@@ -57,7 +62,7 @@
 				{
 					"backtrace" : 3,
 					"isSystem" : true,
-					"path" : "/home/sea-man/Desktop/Computer_Graphics/circle_sphere/include"
+					"path" : "/home/lex/Desktop/openGL-Study/circle_sphere/include"
 				}
 			],
 			"language" : "CXX",
@@ -78,7 +83,7 @@
 				{
 					"backtrace" : 3,
 					"isSystem" : true,
-					"path" : "/home/sea-man/Desktop/Computer_Graphics/circle_sphere/include"
+					"path" : "/home/lex/Desktop/openGL-Study/circle_sphere/include"
 				}
 			],
 			"language" : "C",
@@ -98,10 +103,6 @@
 				"role" : "flags"
 			},
 			{
-				"fragment" : "",
-				"role" : "flags"
-			},
-			{
 				"backtrace" : 2,
 				"fragment" : "-lglfw",
 				"role" : "libraries"
@@ -109,6 +110,13 @@
 		],
 		"language" : "CXX"
 	},
+	"linkLibraries" : 
+	[
+		{
+			"backtrace" : 2,
+			"fragment" : "glfw"
+		}
+	],
 	"name" : "circle_sphere",
 	"nameOnDisk" : "circle_sphere",
 	"paths" : 

@@ -1,14 +1,14 @@
 [
 {
-  "directory": "/home/sea-man/Desktop/Computer_Graphics/circle_sphere/build",
-  "command": "/usr/bin/c++  -isystem /home/sea-man/Desktop/Computer_Graphics/circle_sphere/include -g -o CMakeFiles/circle_sphere.dir/src/main.cpp.o -c /home/sea-man/Desktop/Computer_Graphics/circle_sphere/src/main.cpp",
-  "file": "/home/sea-man/Desktop/Computer_Graphics/circle_sphere/src/main.cpp",
+  "directory": "/home/lex/Desktop/openGL-Study/circle_sphere/build",
+  "command": "/usr/bin/c++  -isystem /home/lex/Desktop/openGL-Study/circle_sphere/include -g -o CMakeFiles/circle_sphere.dir/src/main.cpp.o -c /home/lex/Desktop/openGL-Study/circle_sphere/src/main.cpp",
+  "file": "/home/lex/Desktop/openGL-Study/circle_sphere/src/main.cpp",
   "output": "CMakeFiles/circle_sphere.dir/src/main.cpp.o"
 },
 {
-  "directory": "/home/sea-man/Desktop/Computer_Graphics/circle_sphere/build",
-  "command": "/usr/bin/cc  -isystem /home/sea-man/Desktop/Computer_Graphics/circle_sphere/include -g -o CMakeFiles/circle_sphere.dir/src/glad.c.o -c /home/sea-man/Desktop/Computer_Graphics/circle_sphere/src/glad.c",
-  "file": "/home/sea-man/Desktop/Computer_Graphics/circle_sphere/src/glad.c",
+  "directory": "/home/lex/Desktop/openGL-Study/circle_sphere/build",
+  "command": "/usr/bin/cc  -isystem /home/lex/Desktop/openGL-Study/circle_sphere/include -g -o CMakeFiles/circle_sphere.dir/src/glad.c.o -c /home/lex/Desktop/openGL-Study/circle_sphere/src/glad.c",
+  "file": "/home/lex/Desktop/openGL-Study/circle_sphere/src/glad.c",
   "output": "CMakeFiles/circle_sphere.dir/src/glad.c.o"
 }
 ]

@@ -8,8 +8,9 @@ set(CMAKE_DEPENDS_LANGUAGES
 
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
-  "/home/sea-man/Desktop/Computer_Graphics/circle_sphere/src/glad.c" "CMakeFiles/circle_sphere.dir/src/glad.c.o" "gcc" "CMakeFiles/circle_sphere.dir/src/glad.c.o.d"
-  "/home/sea-man/Desktop/Computer_Graphics/circle_sphere/src/main.cpp" "CMakeFiles/circle_sphere.dir/src/main.cpp.o" "gcc" "CMakeFiles/circle_sphere.dir/src/main.cpp.o.d"
+  "/home/lex/Desktop/openGL-Study/circle_sphere/src/glad.c" "CMakeFiles/circle_sphere.dir/src/glad.c.o" "gcc" "CMakeFiles/circle_sphere.dir/src/glad.c.o.d"
+  "/home/lex/Desktop/openGL-Study/circle_sphere/src/main.cpp" "CMakeFiles/circle_sphere.dir/src/main.cpp.o" "gcc" "CMakeFiles/circle_sphere.dir/src/main.cpp.o.d"
+  "" "circle_sphere" "gcc" "CMakeFiles/circle_sphere.dir/link.d"
   )
 
 # Targets to which this target links which contain Fortran sources.

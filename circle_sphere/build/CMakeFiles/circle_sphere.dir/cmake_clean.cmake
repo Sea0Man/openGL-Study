@@ -1,4 +1,5 @@
 file(REMOVE_RECURSE
+  "CMakeFiles/circle_sphere.dir/link.d"
   "CMakeFiles/circle_sphere.dir/src/glad.c.o"
   "CMakeFiles/circle_sphere.dir/src/glad.c.o.d"
   "CMakeFiles/circle_sphere.dir/src/main.cpp.o"

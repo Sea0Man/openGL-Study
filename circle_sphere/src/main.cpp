@@ -7,14 +7,14 @@
 #include <iostream>
 #include <math.h>
 
-#define HEIGTH 900
-#define WIDTH 1600
+#define HEIGTH 675
+#define WIDTH 1200
 #define SECTIONS 128
 
 Camera camera(glm::vec3(0.0f, -1.0f, 7.0f));
 float angle = 2 * (float)M_PI / SECTIONS;
 glm::vec3 lightPos = glm::vec3(3.0f, -0.5f, 2.0f);
-glm::vec3 lightColor = glm::vec3(1.0f, 1.0f, 1.0f);
+glm::vec3 lightColor = glm::vec3(1.0f, 0.0f, 1.0f);
 
 void framebuffer_size_callback(GLFWwindow* window, int width, int height)
 {
@@ -199,9 +199,16 @@ int main(int, char**){
         
         shader.use();
         shader.setVec3("objectColor", glm::vec3(0.3f, 0.6f, 0.7f));
-        shader.setVec3("lightPos", lightPos);
+        shader.setVec3("light.position", lightPos);
         shader.setVec3("lightColor", lightColor);
         shader.setVec3("viewPos", camera.CameraPos);
+        shader.setVec3("material.ambient", glm::vec3(1.0f, 0.5f, 0.31f));
+        shader.setVec3("material.diffuse", glm::vec3(1.0f, 0.5f, 0.31f));
+        shader.setVec3("material.specular", glm::vec3(0.5f, 0.5f, 0.5f));
+        shader.setVec3("light.ambient", glm::vec3(0.2f, 0.2f, 0.2f));
+        shader.setVec3("light.diffuse", glm::vec3(0.5f, 0.5f, 0.5f));
+        shader.setVec3("light.specular", glm::vec3(1.0f, 1.0f, 1.0f));
+        shader.setFloat("material.shininess", 32.0f);
         glm::mat4 model = glm::mat4(1.0f);
         model = glm::rotate(model, (float)glfwGetTime() / 2, glm::vec3(1.0f, 1.0f, 1.0f));
         shader.setMat4("model", model);
