@@ -1,14 +1,14 @@
 [
 {
-  "directory": "/home/sea-man/Desktop/Computer_Graphics/lighting/build",
-  "command": "/usr/bin/c++  -isystem /home/sea-man/Desktop/Computer_Graphics/lighting/include -g -o CMakeFiles/lighting.dir/src/main.cpp.o -c /home/sea-man/Desktop/Computer_Graphics/lighting/src/main.cpp",
-  "file": "/home/sea-man/Desktop/Computer_Graphics/lighting/src/main.cpp",
+  "directory": "/home/lex/Desktop/openGL-Study/lighting/build",
+  "command": "/usr/bin/c++  -isystem /home/lex/Desktop/openGL-Study/lighting/include -g -o CMakeFiles/lighting.dir/src/main.cpp.o -c /home/lex/Desktop/openGL-Study/lighting/src/main.cpp",
+  "file": "/home/lex/Desktop/openGL-Study/lighting/src/main.cpp",
   "output": "CMakeFiles/lighting.dir/src/main.cpp.o"
 },
 {
-  "directory": "/home/sea-man/Desktop/Computer_Graphics/lighting/build",
-  "command": "/usr/bin/cc  -isystem /home/sea-man/Desktop/Computer_Graphics/lighting/include -g -o CMakeFiles/lighting.dir/src/glad.c.o -c /home/sea-man/Desktop/Computer_Graphics/lighting/src/glad.c",
-  "file": "/home/sea-man/Desktop/Computer_Graphics/lighting/src/glad.c",
+  "directory": "/home/lex/Desktop/openGL-Study/lighting/build",
+  "command": "/usr/bin/cc  -isystem /home/lex/Desktop/openGL-Study/lighting/include -g -o CMakeFiles/lighting.dir/src/glad.c.o -c /home/lex/Desktop/openGL-Study/lighting/src/glad.c",
+  "file": "/home/lex/Desktop/openGL-Study/lighting/src/glad.c",
   "output": "CMakeFiles/lighting.dir/src/glad.c.o"
 }
 ]

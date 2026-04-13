@@ -8,8 +8,9 @@ set(CMAKE_DEPENDS_LANGUAGES
 
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
-  "/home/sea-man/Desktop/Computer_Graphics/lighting/src/glad.c" "CMakeFiles/lighting.dir/src/glad.c.o" "gcc" "CMakeFiles/lighting.dir/src/glad.c.o.d"
-  "/home/sea-man/Desktop/Computer_Graphics/lighting/src/main.cpp" "CMakeFiles/lighting.dir/src/main.cpp.o" "gcc" "CMakeFiles/lighting.dir/src/main.cpp.o.d"
+  "/home/lex/Desktop/openGL-Study/lighting/src/glad.c" "CMakeFiles/lighting.dir/src/glad.c.o" "gcc" "CMakeFiles/lighting.dir/src/glad.c.o.d"
+  "/home/lex/Desktop/openGL-Study/lighting/src/main.cpp" "CMakeFiles/lighting.dir/src/main.cpp.o" "gcc" "CMakeFiles/lighting.dir/src/main.cpp.o.d"
+  "" "lighting" "gcc" "CMakeFiles/lighting.dir/link.d"
   )
 
 # Targets to which this target links which contain Fortran sources.

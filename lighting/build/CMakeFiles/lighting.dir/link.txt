@@ -1,1 +1,1 @@
-/usr/bin/c++ -g CMakeFiles/lighting.dir/src/main.cpp.o CMakeFiles/lighting.dir/src/glad.c.o -o lighting  -lglfw 
+/usr/bin/c++ -g -Wl,--dependency-file=CMakeFiles/lighting.dir/link.d CMakeFiles/lighting.dir/src/main.cpp.o CMakeFiles/lighting.dir/src/glad.c.o -o lighting  -lglfw

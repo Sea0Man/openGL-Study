@@ -2,11 +2,12 @@
 	"configurations" : 
 	[
 		{
+			"abstractTargets" : [],
 			"directories" : 
 			[
 				{
 					"build" : ".",
-					"jsonFile" : "directory-.-Debug-f5ebdc15457944623624.json",
+					"jsonFile" : "directory-.-Debug-fd6451d79dc282e2f566.json",
 					"minimumCMakeVersion" : 
 					{
 						"string" : "3.10.0"
@@ -39,7 +40,7 @@
 				{
 					"directoryIndex" : 0,
 					"id" : "lighting::@6890427a1f51a3e7e1df",
-					"jsonFile" : "target-lighting-Debug-388697e1bce6d3d0c15e.json",
+					"jsonFile" : "target-lighting-Debug-bc04b0334c76b61ff194.json",
 					"name" : "lighting",
 					"projectIndex" : 0
 				}
@@ -49,12 +50,12 @@
 	"kind" : "codemodel",
 	"paths" : 
 	{
-		"build" : "/home/sea-man/Desktop/Computer_Graphics/lighting/build",
-		"source" : "/home/sea-man/Desktop/Computer_Graphics/lighting"
+		"build" : "/home/lex/Desktop/openGL-Study/lighting/build",
+		"source" : "/home/lex/Desktop/openGL-Study/lighting"
 	},
 	"version" : 
 	{
 		"major" : 2,
-		"minor" : 6
+		"minor" : 10
 	}
 }
