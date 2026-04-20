@@ -229,5 +229,6 @@ int main(int, char**){
 
         glfwSwapBuffers(window);
         glfwPollEvents();    
+        std::cout << glGetError() << std::endl;
     }
 }
