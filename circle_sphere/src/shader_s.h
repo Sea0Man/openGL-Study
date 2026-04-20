@@ -43,28 +43,29 @@ public:
         {
             std::cout << "ERROR::SHADER::FILE_NOT_SUCCESSFULLY_READ: " << e.what() << std::endl;
         }
-
+        
+        
         const char* vShaderCode = vertexCode.c_str();
         const char * fShaderCode = fragmentCode.c_str();
-
+        
         unsigned int vertexShader = glCreateShader(GL_VERTEX_SHADER);
         glShaderSource(vertexShader, 1, &vShaderCode, NULL);
         glCompileShader(vertexShader);
-
-
+        
+        
         unsigned int fragmentShader = glCreateShader(GL_FRAGMENT_SHADER);
         glShaderSource(fragmentShader, 1, &fShaderCode, NULL);
         glCompileShader(fragmentShader);
-
+        
         ID = glCreateProgram();
         glAttachShader(ID, vertexShader);
         glAttachShader(ID, fragmentShader);
         glLinkProgram(ID);
-
+        
         glDeleteShader(vertexShader);
         glDeleteShader(fragmentShader);
     }
-
+    
     void use()
     {
         glUseProgram(ID);
