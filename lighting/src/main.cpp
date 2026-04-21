@@ -13,8 +13,57 @@
 #define HEIGTH 600
 #define WIDTH 800
 
-glm::vec3 lightPos(-0.5f, 0.0f, 2.0f);
-Camera camera(glm::vec3(0.0f, 0.0f, 4.0f));
+glm::vec3 lightPos(0.0f, 0.0f, 7.0f);
+glm::vec3 lightDir(0.0f, 0.0f, -7.0f);
+Camera camera(glm::vec3(0.0f, 0.0f, 6.0f));
+
+void APIENTRY glDebugOutput(GLenum source, 
+                            GLenum type, 
+                            unsigned int id, 
+                            GLenum severity, 
+                            GLsizei length, 
+                            const char *message, 
+                            const void *userParam)
+{
+    // ignore non-significant error/warning codes
+    if(id == 131169 || id == 131185 || id == 131218 || id == 131204) return; 
+
+    std::cout << "---------------" << std::endl;
+    std::cout << "Debug message (" << id << "): " <<  message << std::endl;
+
+    switch (source)
+    {
+        case GL_DEBUG_SOURCE_API:             std::cout << "Source: API"; break;
+        case GL_DEBUG_SOURCE_WINDOW_SYSTEM:   std::cout << "Source: Window System"; break;
+        case GL_DEBUG_SOURCE_SHADER_COMPILER: std::cout << "Source: Shader Compiler"; break;
+        case GL_DEBUG_SOURCE_THIRD_PARTY:     std::cout << "Source: Third Party"; break;
+        case GL_DEBUG_SOURCE_APPLICATION:     std::cout << "Source: Application"; break;
+        case GL_DEBUG_SOURCE_OTHER:           std::cout << "Source: Other"; break;
+    } std::cout << std::endl;
+
+    switch (type)
+    {
+        case GL_DEBUG_TYPE_ERROR:               std::cout << "Type: Error"; break;
+        case GL_DEBUG_TYPE_DEPRECATED_BEHAVIOR: std::cout << "Type: Deprecated Behaviour"; break;
+        case GL_DEBUG_TYPE_UNDEFINED_BEHAVIOR:  std::cout << "Type: Undefined Behaviour"; break; 
+        case GL_DEBUG_TYPE_PORTABILITY:         std::cout << "Type: Portability"; break;
+        case GL_DEBUG_TYPE_PERFORMANCE:         std::cout << "Type: Performance"; break;
+        case GL_DEBUG_TYPE_MARKER:              std::cout << "Type: Marker"; break;
+        case GL_DEBUG_TYPE_PUSH_GROUP:          std::cout << "Type: Push Group"; break;
+        case GL_DEBUG_TYPE_POP_GROUP:           std::cout << "Type: Pop Group"; break;
+        case GL_DEBUG_TYPE_OTHER:               std::cout << "Type: Other"; break;
+    } std::cout << std::endl;
+    
+    switch (severity)
+    {
+        case GL_DEBUG_SEVERITY_HIGH:         std::cout << "Severity: high"; break;
+        case GL_DEBUG_SEVERITY_MEDIUM:       std::cout << "Severity: medium"; break;
+        case GL_DEBUG_SEVERITY_LOW:          std::cout << "Severity: low"; break;
+        case GL_DEBUG_SEVERITY_NOTIFICATION: std::cout << "Severity: notification"; break;
+    } std::cout << std::endl;
+    std::cout << std::endl;
+}
+
 
 unsigned int loadTexture(char const * path)
 {
@@ -68,6 +117,7 @@ int main(int, char**){
     glfwWindowHint(GLFW_CONTEXT_VERSION_MAJOR, 4);
     glfwWindowHint(GLFW_CONTEXT_VERSION_MINOR, 6);
     glfwWindowHint(GLFW_OPENGL_PROFILE, GLFW_OPENGL_CORE_PROFILE);
+    glfwWindowHint(GLFW_OPENGL_DEBUG_CONTEXT, true);
 
     GLFWwindow* window = glfwCreateWindow(WIDTH, HEIGTH, "LearnOpenGL", NULL, NULL);
     if (window == NULL)
@@ -87,9 +137,18 @@ int main(int, char**){
 
     glEnable(GL_DEPTH_TEST);
 
+    int flags; glGetIntegerv(GL_CONTEXT_FLAGS, &flags);
+    if (flags & GL_CONTEXT_FLAG_DEBUG_BIT)
+    {
+        glEnable(GL_DEBUG_OUTPUT);
+        glEnable(GL_DEBUG_OUTPUT_SYNCHRONOUS); 
+        glDebugMessageCallback(glDebugOutput, nullptr);
+        glDebugMessageControl(GL_DONT_CARE, GL_DONT_CARE, GL_DONT_CARE, 0, nullptr, GL_TRUE);
+    } 
+
     // glfwSetInputMode(window, GLFW_CURSOR, GLFW_CURSOR_DISABLED);
     Shader shader("../shaders/object.vs", "../shaders/object.fs");
-    Shader shader_lightCube("../shaders/light_cube.vs", "../shaders/light_cube.fs");
+    Shader light_cube_shader("../shaders/light_cube.vs", "../shaders/light_cube.fs");
 
     float vertices[] = {
     // positions          // normals           // texture coords
@@ -136,15 +195,25 @@ int main(int, char**){
     -0.5f,  0.5f, -0.5f,  0.0f,  1.0f,  0.0f,  0.0f, 1.0f
 };
 
+glm::vec3 cubePositions[] = {
+    glm::vec3( 0.0f,  0.0f,  0.0f),
+    glm::vec3( 2.0f,  5.0f, -15.0f),
+    glm::vec3(-1.5f, -2.2f, -2.5f),
+    glm::vec3(-3.8f, -2.0f, -12.3f),
+    glm::vec3( 2.4f, -0.4f, -3.5f),
+    glm::vec3(-1.7f,  3.0f, -7.5f),
+    glm::vec3( 1.3f, -2.0f, -2.5f),
+    glm::vec3( 1.5f,  2.0f, -2.5f),
+    glm::vec3( 1.5f,  0.2f, -1.5f),
+    glm::vec3(-1.3f,  1.0f, -1.5f)
+};
+
     unsigned int diffuseMap = loadTexture(std::filesystem::path("../img/container.png").c_str());
     unsigned int specularMap = loadTexture(std::filesystem::path("../img/container_specular.png").c_str());
-    unsigned int emissionMap = loadTexture(std::filesystem::path("../img/matrix.jpg").c_str());
 
-    std::cout << diffuseMap << specularMap;
     shader.use();
     shader.setInt("material.diffuse", 0);
     shader.setInt("material.specular", 1);
-    shader.setInt("material.emission", 2);
 
     // bind diffuse map
     glActiveTexture(GL_TEXTURE0);
@@ -152,9 +221,6 @@ int main(int, char**){
     // bind specular map
     glActiveTexture(GL_TEXTURE1);
     glBindTexture(GL_TEXTURE_2D, specularMap);
-    // bind emission map
-    glActiveTexture(GL_TEXTURE2);
-    glBindTexture(GL_TEXTURE_2D, emissionMap);
 
     
 
@@ -178,14 +244,18 @@ int main(int, char**){
     glEnableVertexAttribArray(2);
 
 
-    unsigned int lightVAO;
-    glGenVertexArrays(1, &lightVAO);
+    unsigned int light_cubeVBO, light_cubeVAO;
+    glGenBuffers(1, &light_cubeVBO);
+    glGenVertexArrays(1, &light_cubeVAO);
 
-    glBindVertexArray(lightVAO);
-    glBindBuffer(GL_ARRAY_BUFFER, VBO);
+    glBindVertexArray(light_cubeVAO);
+    glBindBuffer(GL_ARRAY_BUFFER, light_cubeVBO);
+    glBufferData(GL_ARRAY_BUFFER, sizeof(vertices), vertices, GL_STATIC_DRAW);
+
 
     glVertexAttribPointer(0, 3, GL_FLOAT, GL_FALSE, 8 * sizeof(float), (void*)0);
     glEnableVertexAttribArray(0);
+
 
     while(!glfwWindowShouldClose(window))
     {
@@ -194,41 +264,54 @@ int main(int, char**){
         glClearColor(0.2f, 0.3f, 0.3f, 1.0f);
         glClear(GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT);
 
+        light_cube_shader.use();
+        glm::mat4 projection = glm::perspective(glm::radians(camera.Fov), (float)WIDTH / (float)HEIGTH, 0.1f, 100.0f);
+        light_cube_shader.setMat4("projection", projection);
+        light_cube_shader.setMat4("view", camera.getViewMatrix());
+        glm::mat4 model = glm::mat4(1.0f);
+        model = glm::translate(model, lightPos);
+        model = glm::scale(model, glm::vec3(0.4f));
+        light_cube_shader.setMat4("model", model);
+
+        glBindVertexArray(light_cubeVAO);
+        glDrawArrays(GL_TRIANGLES, 0, sizeof(vertices));
+
+
         shader.use();
         shader.setVec3("light.position", lightPos);
+        shader.setVec3("light.direction", lightDir);
         shader.setVec3("viewPos", camera.CameraPos);
-        shader.setVec3("light.ambient", glm::vec3(0.2f, 0.2f, 0.2f));
+        shader.setVec3("light.ambient", glm::vec3(0.1f, 0.1f, 0.1f));
         shader.setVec3("light.diffuse", glm::vec3(0.5f, 0.5f, 0.5f));
         shader.setVec3("light.specular", glm::vec3(1.0f, 1.0f, 1.0f));
+        shader.setFloat("light.constant",  1.0f);
+        shader.setFloat("light.linear",    0.045f);
+        shader.setFloat("light.quadratic", 0.0075f);
+        shader.setFloat("light.cutOff", glm::cos(glm::radians(10.0f)));
+        shader.setFloat("light.outerCutOff", glm::cos(glm::radians(11.0f)));
         shader.setFloat("material.shininess", 32.0f);
 
-        glm::mat4 model = glm::mat4(1.0f);
-        model = glm::rotate(model, (float)glfwGetTime(), glm::vec3(1.0f, 1.0f, 1.0f));
-        shader.setMat4("model", model);
-        glm::mat4 projection = glm::perspective(glm::radians(camera.Fov), (float)WIDTH / (float)HEIGTH, 0.1f, 100.0f);
+        projection = glm::perspective(glm::radians(camera.Fov), (float)WIDTH / (float)HEIGTH, 0.1f, 100.0f);
         shader.setMat4("projection", projection);
         shader.setMat4("view", camera.getViewMatrix());
 
-        glBindVertexArray(cubeVAO);
-        glDrawArrays(GL_TRIANGLES, 0, sizeof(vertices));
-
-        shader_lightCube.use();
-        model = glm::mat4(1.0f);
-        // model = glm::rotate(model, (float)glfwGetTime() / 2, glm::vec3(0.0f, 1.0f, 0.0f));
-        model = glm::translate(model, lightPos);
-        model = glm::scale(model, glm::vec3(0.2f));
-        shader_lightCube.setMat4("model", model);
-        projection = glm::perspective(glm::radians(camera.Fov), (float)WIDTH / (float)HEIGTH, 0.1f, 100.0f);
-        shader_lightCube.setMat4("projection", projection);
-        shader_lightCube.setMat4("view", camera.getViewMatrix());
 
 
-        // lightPos.x = glfwGetTime() - 4.0;
-        glBindVertexArray(lightVAO);
-        glDrawArrays(GL_TRIANGLES, 0, sizeof(vertices));
+        
+        for(unsigned int i = 0; i < 10; i++)
+        {
+            model = glm::mat4(1.0f);
+            model = glm::translate(model, cubePositions[i]);
+            float angle = 20.0f * i;
+            model = glm::rotate(model, (float)glfwGetTime(), glm::vec3(1.0f, 0.3f, 0.5f));
+            shader.setMat4("model", model);
+
+            glBindVertexArray(cubeVAO);
+            glDrawArrays(GL_TRIANGLES, 0, sizeof(vertices));
+        }
 
         glfwSwapBuffers(window);
         glfwPollEvents();    
-        std::cout << glGetError() << std::endl;
+
     }
 }

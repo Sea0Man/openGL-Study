@@ -67,8 +67,7 @@ public:
 
     void use()
     {
-        glUseProgram(ID);\
-        std::cout << ID << std::endl;
+        glUseProgram(ID);
     }
 
     void setBool(const std::string &name, bool value) const
