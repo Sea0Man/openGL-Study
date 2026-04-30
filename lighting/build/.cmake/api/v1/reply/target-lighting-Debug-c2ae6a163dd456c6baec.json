@@ -43,11 +43,6 @@
 			}
 		]
 	},
-	"codemodelVersion" : 
-	{
-		"major" : 2,
-		"minor" : 10
-	},
 	"compileGroups" : 
 	[
 		{
@@ -62,7 +57,7 @@
 				{
 					"backtrace" : 3,
 					"isSystem" : true,
-					"path" : "/home/lex/Desktop/openGL-Study/lighting/include"
+					"path" : "/home/sea-man/Desktop/openGL-Study/lighting/include"
 				}
 			],
 			"language" : "CXX",
@@ -83,7 +78,7 @@
 				{
 					"backtrace" : 3,
 					"isSystem" : true,
-					"path" : "/home/lex/Desktop/openGL-Study/lighting/include"
+					"path" : "/home/sea-man/Desktop/openGL-Study/lighting/include"
 				}
 			],
 			"language" : "C",
@@ -103,6 +98,10 @@
 				"role" : "flags"
 			},
 			{
+				"fragment" : "",
+				"role" : "flags"
+			},
+			{
 				"backtrace" : 2,
 				"fragment" : "-lglfw",
 				"role" : "libraries"
@@ -110,13 +109,6 @@
 		],
 		"language" : "CXX"
 	},
-	"linkLibraries" : 
-	[
-		{
-			"backtrace" : 2,
-			"fragment" : "glfw"
-		}
-	],
 	"name" : "lighting",
 	"nameOnDisk" : "lighting",
 	"paths" : 
