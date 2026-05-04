@@ -1,0 +1,1 @@
+/usr/bin/c++ -g CMakeFiles/model.dir/src/main.cpp.o CMakeFiles/model.dir/src/glad.c.o -o model  -lglfw -lassimp 

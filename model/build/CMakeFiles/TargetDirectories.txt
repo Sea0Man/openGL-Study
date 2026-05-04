@@ -1,0 +1,3 @@
+/home/sea-man/Desktop/openGL-Study/model/build/CMakeFiles/model.dir
+/home/sea-man/Desktop/openGL-Study/model/build/CMakeFiles/edit_cache.dir
+/home/sea-man/Desktop/openGL-Study/model/build/CMakeFiles/rebuild_cache.dir

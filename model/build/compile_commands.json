@@ -1,0 +1,14 @@
+[
+{
+  "directory": "/home/sea-man/Desktop/openGL-Study/model/build",
+  "command": "/usr/bin/c++  -isystem /home/sea-man/Desktop/openGL-Study/model/include -g -o CMakeFiles/model.dir/src/main.cpp.o -c /home/sea-man/Desktop/openGL-Study/model/src/main.cpp",
+  "file": "/home/sea-man/Desktop/openGL-Study/model/src/main.cpp",
+  "output": "CMakeFiles/model.dir/src/main.cpp.o"
+},
+{
+  "directory": "/home/sea-man/Desktop/openGL-Study/model/build",
+  "command": "/usr/bin/cc  -isystem /home/sea-man/Desktop/openGL-Study/model/include -g -o CMakeFiles/model.dir/src/glad.c.o -c /home/sea-man/Desktop/openGL-Study/model/src/glad.c",
+  "file": "/home/sea-man/Desktop/openGL-Study/model/src/glad.c",
+  "output": "CMakeFiles/model.dir/src/glad.c.o"
+}
+]
