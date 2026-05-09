@@ -1,4 +1,5 @@
 file(REMOVE_RECURSE
+  "CMakeFiles/lighting.dir/link.d"
   "CMakeFiles/lighting.dir/src/glad.c.o"
   "CMakeFiles/lighting.dir/src/glad.c.o.d"
   "CMakeFiles/lighting.dir/src/main.cpp.o"

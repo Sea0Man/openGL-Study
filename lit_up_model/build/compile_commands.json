@@ -1,0 +1,14 @@
+[
+{
+  "directory": "/home/lex/Desktop/openGL-Study/lit_up_model/build",
+  "command": "/usr/bin/c++  -isystem /home/lex/Desktop/openGL-Study/lit_up_model/include -g -o CMakeFiles/lit_up_model.dir/src/main.cpp.o -c /home/lex/Desktop/openGL-Study/lit_up_model/src/main.cpp",
+  "file": "/home/lex/Desktop/openGL-Study/lit_up_model/src/main.cpp",
+  "output": "CMakeFiles/lit_up_model.dir/src/main.cpp.o"
+},
+{
+  "directory": "/home/lex/Desktop/openGL-Study/lit_up_model/build",
+  "command": "/usr/bin/cc  -isystem /home/lex/Desktop/openGL-Study/lit_up_model/include -g -o CMakeFiles/lit_up_model.dir/src/glad.c.o -c /home/lex/Desktop/openGL-Study/lit_up_model/src/glad.c",
+  "file": "/home/lex/Desktop/openGL-Study/lit_up_model/src/glad.c",
+  "output": "CMakeFiles/lit_up_model.dir/src/glad.c.o"
+}
+]

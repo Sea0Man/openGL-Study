@@ -285,10 +285,10 @@ glm::vec3 lightPossitions[4] = {
 
         shader.use();
         shader.setVec3("dirLight.direction", glm::vec3(1.0f, -1.0f, -0.4f));
-        shader.setVec3("viewPos", camera.CameraPos);
-        shader.setVec3("ambient", glm::vec3(0.1f, 0.1f, 0.1f));
         shader.setVec3("dirLight.diffuse", glm::vec3(0.5f, 0.5f, 0.5f));
         shader.setVec3("dirLight.specular", glm::vec3(1.0f, 1.0f, 1.0f));
+        shader.setVec3("viewPos", camera.CameraPos);
+        shader.setVec3("ambient", glm::vec3(0.1f, 0.1f, 0.1f));
         // shader.setFloat("light.constant",  1.0f);
 
         shader.setVec3("pointLight[0].position",  lightPossitions[0]);
@@ -344,7 +344,7 @@ glm::vec3 lightPossitions[4] = {
             model = glm::mat4(1.0f);
             model = glm::translate(model, cubePositions[i]);
             float angle = 20.0f * i;
-            model = glm::rotate(model, angle, glm::vec3(1.0f, 0.3f, 0.5f));
+            model = glm::rotate(model, (float)glfwGetTime(), glm::vec3(1.0f, 0.3f, 0.5f));
             shader.setMat4("model", model);
 
             glBindVertexArray(cubeVAO);

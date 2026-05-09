@@ -1,0 +1,3 @@
+/home/lex/Desktop/openGL-Study/lit_up_model/build/CMakeFiles/lit_up_model.dir
+/home/lex/Desktop/openGL-Study/lit_up_model/build/CMakeFiles/edit_cache.dir
+/home/lex/Desktop/openGL-Study/lit_up_model/build/CMakeFiles/rebuild_cache.dir

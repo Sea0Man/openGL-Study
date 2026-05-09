@@ -1,0 +1,1 @@
+/usr/bin/c++ -g -Wl,--dependency-file=CMakeFiles/lit_up_model.dir/link.d CMakeFiles/lit_up_model.dir/src/main.cpp.o CMakeFiles/lit_up_model.dir/src/glad.c.o -o lit_up_model  -lglfw -lassimp
